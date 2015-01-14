@@ -22,6 +22,9 @@ int main()
     if (regex_search(s, matches, r))
     	mp[matches[0]]++;
   }
+  
+  in.close();
+  
   for (map<string, int>::const_iterator it = mp.begin(); it != mp.end(); ++it)
     cout << it->first << " " << it->second << "\n";
   return 0;
